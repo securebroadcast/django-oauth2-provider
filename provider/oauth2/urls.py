@@ -52,4 +52,7 @@ urlpatterns = patterns('',
     url('^access_token/?$',
         csrf_exempt(AccessTokenView.as_view()),
         name='access_token'),
+    url('^token/?$',
+        csrf_exempt(AccessTokenView.as_view()),
+        name='access_token'),
 )
